@@ -31,6 +31,9 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_IN";
 
+  services.desktopManager.cosmic.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_IN";
     LC_IDENTIFICATION = "en_IN";
