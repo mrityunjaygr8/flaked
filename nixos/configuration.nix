@@ -45,8 +45,8 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -66,6 +66,7 @@
    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
    wget
    git
+   cachix
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
